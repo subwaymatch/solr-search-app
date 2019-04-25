@@ -1,0 +1,61 @@
+@import "../common.scss";
+
+.search-rank-algorithm-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1.2;
+  height: 100%;
+  padding-left: 20px;
+
+  label.search-algorithm-label {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 20px;
+    padding-right: 30px;
+    border-right: 1px solid black;
+  }
+
+  div.option-select {
+    padding: 10px 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer !important;
+
+    * {
+      cursor: pointer;
+    }
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    label {
+      display: block;
+    }
+
+    .indicator-wrapper {
+      width: 100%;
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+
+      span.circle {
+        visibility: hidden;
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-radius: 200px;
+        background-color: $primary-color;
+      }
+    }
+
+    &.selected {
+      color: $primary-color;
+
+      span.circle {
+        visibility: visible;
+      }
+    }
+  }
+}

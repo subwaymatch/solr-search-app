@@ -1,0 +1,64 @@
+@import "../common.scss";
+
+.search-form-wrapper {
+  display: flex;
+  align-items: center;
+  padding: 10px $horizontal-padding-width;
+  border-right: 1px solid black;
+
+  i.material-icons {
+    display: inline-block;
+    font-size: 32px;
+    line-height: 32px;
+    margin-right: 20px;
+  }
+
+  form#search-form {
+    flex-grow: 1;
+  }
+
+  .react-autosuggest__container {
+    position: relative;
+  }
+
+  input.react-autosuggest__input {
+    display: block;
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 32px;
+    line-height: 36px;
+    border: none;
+    padding: 30px 0;
+    width: 100%;
+
+    &::placeholder {
+      color: #ddd;
+    }
+  }
+
+  .react-autosuggest__suggestions-container {
+    display: none;
+  }
+
+  .react-autosuggest__input--focused {
+    outline: none;
+  }
+
+  .react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+    color: white;
+    background-color: black;
+    width: 100%;
+    top: 96px;
+    z-index: 2;
+  }
+
+  .react-autosuggest__suggestion--highlighted {
+    background-color: #222;
+  }
+
+  .react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 10px 20px;
+  }
+}

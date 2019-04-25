@@ -1,0 +1,21 @@
+@import "../common.scss";
+
+.footer {
+  .footer-logo-wrapper {
+    text-align: right;
+    padding: $horizontal-padding-width;
+    display: flex;
+    align-items: center;
+
+    span {
+      display: inline-block;
+      margin-right: 20px;
+      flex-grow: 1;
+    }
+
+    img {
+      max-width: 100%;
+      width: 200px;
+    }
+  }
+}

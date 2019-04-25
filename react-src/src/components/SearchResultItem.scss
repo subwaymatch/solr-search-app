@@ -1,0 +1,42 @@
+@import "../common.scss";
+
+.search-result-item {
+  .title-wrapper {
+    padding: 50px $horizontal-padding-width 40px $horizontal-padding-width;
+    border-bottom: 1px solid black;
+
+    .index-display {
+      font-size: 90px;
+      line-height: 1.1;
+    }
+
+    h2 {
+      font-size: 32px;
+      line-height: 1.6;
+      font-weight: bold;
+    }
+
+    p.snippet {
+      font-size: 22px;
+      line-height: 1.6;
+      margin-top: 20px;
+    }
+  }
+
+  .id,
+  .url {
+    line-height: 1;
+    border-bottom: 1px solid black;
+    padding: 25px $horizontal-padding-width;
+    display: flex;
+    align-items: center;
+
+    i.material-icons {
+      color: $primary-color;
+      font-size: 20px;
+      line-height: 20x;
+      display: inline-block;
+      margin-right: 15px;
+    }
+  }
+}

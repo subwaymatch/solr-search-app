@@ -1,0 +1,25 @@
+@import "../common.scss";
+
+#spell-correction-wrapper {
+  display: flex;
+  align-items: center;
+  border-left: 10px solid $primary-color;
+  border-bottom: 1px solid black;
+  padding: 20px $horizontal-padding-width 20px
+    ($horizontal-padding-width - 10px);
+
+  #query-term-corrected {
+    font-size: 18px;
+    line-height: 1;
+    margin-right: 15px;
+  }
+
+  #query-term-original {
+    padding-left: 15px;
+    border-left: 3px solid #ddd;
+    font-size: 16px;
+    line-height: 1;
+    cursor: pointer;
+    color: $primary-color;
+  }
+}
